@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="theme-color" content="#FFCB2F">
+<!--Light Blue default Its the embed color-->
+<meta name="title" content="PizzaDelivery - Discord bot">
+<!--The link title in the embed-->
+<meta name="description" content="PizzaDelivery, Pickup Orders, Deliver Orders, Earn Money, buy upgrades and More!">
+<!--Description ofc-->
+<meta name="thumbnail" content="https://i.imgur.com/le89UNm.jpeg">
+
+<meta name="keywords" content="Discord bot, Best Discord bot, vote, PizzaDelivery">
+<!--Some SEO so google can find your website on search better-->
+<meta name="robots" content="index, follow"><!-- Ignorable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <title>PizzaDelivery - Discord bot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="StyleSheet.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="/" style="text-decoration:none;">Pizza<span>Delivery</span></a></div>
+      <ul class="menu">
+        <li><a href="/" style="text-decoration:none;" class="menu-btn">Home</a></li>
+        <li><a
+            href="https://discord.com/oauth2/authorize?client_id=1177276299308441733&scope=bot%20applications.commands&permissions=272384"
+            style="text-decoration:none;" class="menu-btn">Link</a></li>
+        <li><a href="https://discord.com/invite/UezUbyDCTq" style="text-decoration:none;" class="menu-btn">Support</a>
+        </li>
+        <li><a href="https://github.com/ItsMarwan/PizzaDelivery" style="text-decoration:none;"
+            class="menu-btn">GitHub</a></li>
+        <li><a href="https://top.gg/bot/1177276299308441733" style="text-decoration:none;" class="menu-btn">Top.gg</a>
+        </li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="banner-container">
+    <div class="banner">
+      <h1>Pizza<b>Delivery</b></h1>
+      <p>Pizza<b>Delivery</b>, Pickup Orders, Deliver Orders, Make Restaurants, Upgrades and More!</p>
+      <button class="btn"
+        onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1177276299308441733&scope=bot%20applications.commands&permissions=272384';">Invite
+        Me Now!</button>
+
+    </div>
+  </section>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if (this.scrollY > 20) {
+          $('.navbar').addClass("sticky");
+        }
+        else {
+          $('.navbar').removeClass("sticky");
+        }
+      }); // Add the closing parenthesis for the scroll event function
+
+      $('.menu-btn').click(function () {
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+      });
+    });
+  </script>
+
+  <section class="features">
+    <h1 style="color: white">My Features</h1>
+    <p>The Popular Features That Pizza<b>Delivery</b> Has To Offer!</p>
+
+    <div class="row">
+      <div class="features-col">
+        <h3 style="color: #FFCB2F">Delivering Pizzas</h3>
+        <p>Pickup Pizzas Then <b>Deliver</b> to get Money then Buy Upgrades That Will Help You Progress, Also You can
+          Buy With Your Money restaurants to get EVEN MORE Money!</p>
+      </div>
+      <div class="features-col">
+        <h3 style="color: #FFCB2F">Creating Restaurants</h3>
+        <p>Create <b>Restaurants</b> collect the daily income to upgrade and make More Restaurants, Then Become The
+          Richest Person That Has Ever Gotten This Much Money!</p>
+      </div>
+      <div class="features-col">
+        <h3 style="color: #FFCB2F">Money Economy</h3>
+        <p>Earn <b>Money</b> By Delivering and Collecting Income from the Restaurants you own, Also You Can Buy Upgrades
+          For The Restaurants You have "You can Have Multiple"!</p>
+      </div>
+    </div>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+
+  </section>
+  <footer>
+    <div class="footerCountainer">
+    <div class="footerBottom">
+      <p>Designed With ❤️ By <span class="designer">ItsMarwan.</span></p>
+    </div>
+  </footer>
+</body>
+</html>
