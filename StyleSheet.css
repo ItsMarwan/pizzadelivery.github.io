@@ -270,7 +270,7 @@ h3 {
 }
 
 .features-col:hover {
-  box-shadow: 0 0 20px 0px rgba(255, 203, 47);
+  box-shadow: 0 0 20px 0px rgba(255, 255, 255);
 }
 
 @media(max-width: 700px) {
